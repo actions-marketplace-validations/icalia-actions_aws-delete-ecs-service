@@ -8,5 +8,6 @@ Deletes a specified service within a cluster
       - name: Delete AWS ECS Service
         uses: icalia-actions/aws-delete-ecs-service@v0.0.1
         with:
-          target-group: my-target-group
+          name: my-service-name
+          cluster: my-ecs-cluster
 ```
