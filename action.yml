@@ -1,5 +1,6 @@
 name: Delete AWS ECS Service
 description: Deletes a specified service within a cluster.
+author: Icalia Labs
 
 branding:
   icon: activity
