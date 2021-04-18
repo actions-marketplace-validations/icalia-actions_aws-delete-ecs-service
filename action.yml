@@ -1,0 +1,28 @@
+name: Delete AWS ECS Service
+description: Deletes a specified service within a cluster.
+
+branding:
+  icon: activity
+  color: red
+
+inputs:
+  name:
+    description: The name of the service to delete.
+    required: true
+  cluster:
+    description: |
+      The short name or full Amazon Resource Name (ARN) of the cluster that 
+      hosts the service to delete. If you do not specify a cluster, the default 
+      cluster is assumed.
+    required: false
+  fail-if-no-match:
+    description: Fails the action if a rule is not found using the given matchers
+    required: false
+
+outputs:
+  arn: # id of output
+    description: The ARN of the deleted Service
+
+runs:
+  using: node12
+  main: index.js
